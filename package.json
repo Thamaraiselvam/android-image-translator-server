@@ -1,0 +1,29 @@
+{
+  "name": "emotionserver",
+  "version": "1.0.0",
+  "description": "emotion server ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://thamarai_selvam@bitbucket.org/thamarai_selvam/emotion-server.git"
+  },
+  "author": "Thamaraiselvam",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/thamarai_selvam/emotion-server#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "chalk": "^1.1.1",
+    "express": "^4.13.4",
+    "json-stringify-safe": "^5.0.1",
+    "md5": "^2.0.0",
+    "moment": "^2.11.2",
+    "multer": "^1.1.0",
+    "node-schedule": "^1.0.0",
+    "nodemon": "^1.8.1",
+    "request": "^2.73.0",
+    "restler": "^3.4.0"
+  }
+}
