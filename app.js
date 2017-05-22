@@ -38,7 +38,7 @@ app.post('/upload', upload , function (req, res, next) {
 	var file_name = req.protocol + '://' + req.get('host') +"/"+req.file.filename;
 	console.log(file_name);
 	request.post({
-  		headers: {'Ocp-Apim-Subscription-Key' : '76b062a978934ba8a46356a423904d78', 'Content-Type' : 'application/json'},
+  		headers: {'Ocp-Apim-Subscription-Key' : 'xxx', 'Content-Type' : 'application/json'},
   		uri    : 'https://api.projectoxford.ai/vision/v1.0/describe',
   		body   : { 'url' : 'http://www.childrensuniversity.co.uk/media/26720/activites_2_497x395.jpg'},
   		json: true,
@@ -88,7 +88,7 @@ app.post('/cleanup', function (req, res, next) {
 
 function rest_api_call(res, file_name){
 	rest.post('https://api.projectoxford.ai/vision/v1.0/analyze', {
-	  header: {'Ocp-Apim-Subscription-Key' : '76b062a978934ba8a46356a423904d78'},
+	  header: {'Ocp-Apim-Subscription-Key' : 'xxx'},
 	  body : {url : file_name},
 	}).on('complete', function(data, response) {
 	  // if (response.statusCode == 201) {
